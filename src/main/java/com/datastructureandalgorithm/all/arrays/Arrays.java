@@ -44,8 +44,8 @@ public class Arrays {
 
     }
 
-    public int indexOf(int item){
-        for (int i = 0; i < count; i++){
+    public int indexOf(int item) {
+        for (int i = 0; i < count; i++) {
             if (items[i] == item) {
                 return i;
             }
