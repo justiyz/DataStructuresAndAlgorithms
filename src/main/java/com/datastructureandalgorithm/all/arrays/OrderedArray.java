@@ -16,34 +16,27 @@ public class OrderedArray {
 
 
     //The find() method searches for a specified item by repeatedly dividing in half the range of array elements to be considered.
-    public int find(long searchKey) {
+    public String find(long searchKey) {
+
         int nElems = objElements.length;
-
-        int lowerBound = 0;
         int upperBound = nElems - 1;
-
+        int lowerBound = 0;
         int curIn;
+
         while (true) {
-            log.info("LOWERBOUND & UPPERBOUND -> {} - {}", lowerBound, upperBound);
             curIn = (lowerBound + upperBound) / 2;
-            log.info("CURRENT INDEX 1 -> {}", curIn);
             if (objElements[curIn] == searchKey) {
-                log.info("CURRENT INDEX 2 -> {}", curIn);
-                return curIn;       // found it
+                return ("The number is in index "+curIn);      // found it
             }
             else if (lowerBound > upperBound) {
-                log.info("NUMBER OF ELEMENTS -> {}", nElems);
-                return nElems;      // can’t find it
+                return "Number does not exist in the array";      // can’t find it
             }
             else        // divide range
             {
-                log.info("ELSE -> {}", curIn);
                 if (objElements[curIn] < searchKey) {
-                    log.info("INNER IF -> {}", curIn);
                     lowerBound = curIn + 1; // it’s in upper half
                 }
                 else {
-                    log.info("INNER ELSE -> {}", curIn);
                     upperBound = curIn - 1; // it’s in lower half
                 }
             } // end else divide range
