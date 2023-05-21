@@ -1,4 +1,4 @@
-package com.datastructureandalgorithm.all.arrays;
+package com.datastructureandalgorithm.all.arrays.PrimitiveTypes;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
