@@ -22,18 +22,17 @@ public class OrderedArrayImpl {
         arr.insert(33);
 
         int searchKey = 55; // search for item
-        if( arr.find(searchKey) != arr.size() ) {
+        if (arr.find(searchKey) != arr.size()) {
             System.out.println("Found " + searchKey);
-        }
-        else {
+        } else {
             System.out.println("Can’t find " + searchKey);
         }
 
-//        arr.display(); // display items
-//        arr.delete(00); // delete 3 items
-//        arr.delete(55);
-//        arr.delete(99);
-//        arr.display(); // display items again
+        arr.display(); // display items
+        arr.delete(00); // delete 3 items
+        arr.delete(55);
+        arr.delete(99);
+        arr.display(); // display items again
 
 
     }
