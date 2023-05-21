@@ -5,9 +5,36 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class OrderedArrayImpl {
     public static void main(String[] args) {
-        int[] elements = {10, 20, 30, 40, 50, 60, 70};
-//        OrderedArray array = new OrderedArray(elements);
-//        String result = array.find(30);
-//        log.info("RESULT -> {}", result);
+
+        int maxSize = 100; // array size
+        OrderedArray arr;
+
+        arr = new OrderedArray(maxSize); // create the array
+        arr.insert(77); // insert 10 items
+        arr.insert(99);
+        arr.insert(44);
+        arr.insert(55);
+        arr.insert(22);
+        arr.insert(88);
+        arr.insert(11);
+        arr.insert(00);
+        arr.insert(66);
+        arr.insert(33);
+
+        int searchKey = 55; // search for item
+        if( arr.find(searchKey) != arr.size() ) {
+            System.out.println("Found " + searchKey);
+        }
+        else {
+            System.out.println("Can’t find " + searchKey);
+        }
+
+//        arr.display(); // display items
+//        arr.delete(00); // delete 3 items
+//        arr.delete(55);
+//        arr.delete(99);
+//        arr.display(); // display items again
+
+
     }
 }
