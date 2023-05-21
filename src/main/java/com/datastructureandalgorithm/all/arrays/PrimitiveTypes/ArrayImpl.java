@@ -1,4 +1,4 @@
-package com.datastructureandalgorithm.all.arrays;
+package com.datastructureandalgorithm.all.arrays.PrimitiveTypes;
 
 public class ArrayImpl {
     public static void main(String[] args) {
