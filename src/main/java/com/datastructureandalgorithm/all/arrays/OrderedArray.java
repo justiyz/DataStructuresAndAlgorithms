@@ -74,7 +74,5 @@ public class OrderedArray {
             System.out.print(a[j] + " "); // display it
         System.out.println(" ");
     }
-//-----------------------------------------------------------
-
 
 }
