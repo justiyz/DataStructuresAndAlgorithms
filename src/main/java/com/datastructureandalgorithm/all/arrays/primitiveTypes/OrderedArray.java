@@ -1,4 +1,4 @@
-package com.datastructureandalgorithm.all.arrays.PrimitiveTypes;
+package com.datastructureandalgorithm.all.arrays.primitiveTypes;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -22,19 +22,19 @@ public class OrderedArray {
     public int find(long searchKey) {
         int lowerBound = 0;
         int upperBound = numberOfElements - 1;
-        int curIn;
+        int currentIndex;
         while (true) {
-            curIn = (lowerBound + upperBound) / 2;
-            if (array[curIn] == searchKey)
-                return curIn; // found it
+            currentIndex = (lowerBound + upperBound) / 2;
+            if (array[currentIndex] == searchKey)
+                return currentIndex; // found it
             else if (lowerBound > upperBound)
                 return numberOfElements; // can’t find it
             else // divide range
             {
-                if (array[curIn] < searchKey)
-                    lowerBound = curIn + 1; // it’s in upper half
+                if (array[currentIndex] < searchKey)
+                    lowerBound = currentIndex + 1; // it’s in upper half
                 else
-                    upperBound = curIn - 1; // it’s in lower half
+                    upperBound = currentIndex - 1; // it’s in lower half
             }
         }
     }
@@ -71,4 +71,22 @@ public class OrderedArray {
         System.out.println(" ");
     }
 
+    public int[] merge(int[] source1, int[] source2) {
+
+        int[] destination = new int[source1.length + source2.length];
+        for (int i = 0; i < source1.length; i++) {
+            destination[i] = source1[i];
+            for (int j = 0; j < source2.length; j++) {
+                if (destination[i] > source2[j]) {
+                    destination[i] = source2[j];
+                }
+
+            }
+        }
+
+        return destination;
+    }
+
 }
+
+

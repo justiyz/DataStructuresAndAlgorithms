@@ -1,4 +1,4 @@
-package com.datastructureandalgorithm.all.arrays.Objects;
+package com.datastructureandalgorithm.all.arrays.objects;
 
 import lombok.Data;
 
