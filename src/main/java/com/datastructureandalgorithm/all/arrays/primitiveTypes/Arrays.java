@@ -1,4 +1,4 @@
-package com.datastructureandalgorithm.all.arrays.PrimitiveTypes;
+package com.datastructureandalgorithm.all.arrays.primitiveTypes;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -52,6 +52,7 @@ public class Arrays {
         }
         return -1;
     }
+
 
 }
 
