@@ -1,11 +1,11 @@
 package com.datastructureandalgorithm.all.sorting.simpleSort;
 
-public class BubbleSortApp {
+public class BubbleSortImpl {
     public static void main(String[] args) {
 
         int maxSize = 100; // array size
-        ArrayBub arr; // reference to array
-        arr = new ArrayBub(maxSize); // create the array
+        BubbleSort arr; // reference to array
+        arr = new BubbleSort(maxSize); // create the array
 
         arr.insert(77); // insert 10 items
         arr.insert(99);
