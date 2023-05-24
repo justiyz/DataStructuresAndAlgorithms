@@ -1,11 +1,11 @@
 package com.datastructureandalgorithm.all.sorting.simpleSort;
 
-public class ArrayBub {
+    public class BubbleSort {
 
     private long[] a; // ref to array a
     private int nElems; // number of data items
 
-    public ArrayBub(int max) {
+    public BubbleSort(int max) {
         a = new long[max]; // create the array
         nElems = 0; // no items yet
     }

@@ -71,14 +71,19 @@ public class OrderedArray {
         System.out.println(" ");
     }
 
+    public void insertIntoFirstArray(){
+
+    }
+
     public int[] merge(int[] source1, int[] source2) {
 
         int[] destination = new int[source1.length + source2.length];
         for (int i = 0; i < source1.length; i++) {
-            destination[i] = source1[i];
             for (int j = 0; j < source2.length; j++) {
-                if (destination[i] > source2[j]) {
+                if (source1[i] > source2[j]) {
+                    int temp = destination[i];
                     destination[i] = source2[j];
+                    destination[i+1] = temp;
                 }
 
             }
