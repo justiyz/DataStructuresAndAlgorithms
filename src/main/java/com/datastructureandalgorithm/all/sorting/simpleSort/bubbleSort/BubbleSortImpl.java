@@ -1,4 +1,6 @@
-package com.datastructureandalgorithm.all.sorting.simpleSort;
+package com.datastructureandalgorithm.all.sorting.simpleSort.bubbleSort;
+
+import com.datastructureandalgorithm.all.sorting.simpleSort.bubbleSort.BubbleSort;
 
 public class BubbleSortImpl {
     public static void main(String[] args) {

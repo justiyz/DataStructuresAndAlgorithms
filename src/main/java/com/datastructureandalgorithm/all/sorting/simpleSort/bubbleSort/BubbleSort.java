@@ -1,4 +1,4 @@
-package com.datastructureandalgorithm.all.sorting.simpleSort;
+package com.datastructureandalgorithm.all.sorting.simpleSort.bubbleSort;
 
     public class BubbleSort {
 
