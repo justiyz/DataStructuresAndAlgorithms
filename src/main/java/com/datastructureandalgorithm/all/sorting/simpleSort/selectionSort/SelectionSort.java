@@ -28,14 +28,14 @@ public class SelectionSort {
     }
 
     public void selectionSort() {
-        int outerLoop, innerLoop, min;
+        int outerLoop, innerLoop, minimum;
 
         for (outerLoop = 0; outerLoop < numberOfElements - 1; outerLoop++) {
-            min = outerLoop;
+            minimum = outerLoop;
             for (innerLoop = outerLoop + 1; innerLoop < numberOfElements; innerLoop++) {
-                if (array[innerLoop] < array[min])
-                    min = innerLoop;
-                swap(outerLoop, min);
+                if (array[innerLoop] < array[minimum])
+                    minimum = innerLoop;
+                swap(outerLoop, minimum);
             }
         }
     }
