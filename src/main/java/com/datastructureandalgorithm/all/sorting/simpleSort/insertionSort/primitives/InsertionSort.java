@@ -1,4 +1,4 @@
-package com.datastructureandalgorithm.all.sorting.simpleSort.insertionSort;
+package com.datastructureandalgorithm.all.sorting.simpleSort.insertionSort.primitives;
 
 public class InsertionSort {
 
