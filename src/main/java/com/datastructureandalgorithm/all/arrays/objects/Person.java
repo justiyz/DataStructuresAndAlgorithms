@@ -3,7 +3,7 @@ package com.datastructureandalgorithm.all.arrays.objects;
 import lombok.Data;
 
 @Data
-public class Person {
+class Person {
 
     private String lastName;
     private String firstName;
