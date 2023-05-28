@@ -2,41 +2,41 @@ package com.datastructureandalgorithm.all.sorting.simpleSort.insertionSort;
 
 public class InsertionSort {
 
-    private long[] a;
-    private int nElems; // number of data items
+    private final long[] array;
+    private int numberOfElements;
 
     //constructor
-    public InsertionSort(int max)     {
-        a = new long[max]; // create the array
-        nElems = 0; // no items yet
+    public InsertionSort(int max) {
+        array = new long[max]; // create the array
+        numberOfElements = 0; // no items yet
     }
 
     // put element into array
-    public void insert(long value)     {
-        a[nElems] = value; // insert it
-        nElems++; // increment size
+    public void insert(long value) {
+        array[numberOfElements] = value; // insert it
+        numberOfElements++; // increment size
     }
 
     public void display() // displays array contents
     {
-        for(int j=0; j<nElems; j++) // for each element,
-            System.out.print(a[j] + " "); // display it
+        for (int j = 0; j < numberOfElements; j++) // for each element,
+            System.out.print(array[j] + " "); // display it
         System.out.println("");
     }
 
-    public void insertionSort()    {
-    int in, out;
+    public void insertionSort() {
+        int in, out;
 
-        for(out=1; out<nElems; out++) // out is dividing line
+        for (out = 1; out < numberOfElements; out++) // out is dividing line
         {
-            long temp = a[out]; // remove marked item
+            long temp = array[out]; // remove marked item
             in = out; // start shifts at out
-            while(in>0 && a[in-1] >= temp) // until one is smaller,
+            while (in > 0 && array[in - 1] >= temp) // until one is smaller,
             {
-                a[in] = a[in-1]; // shift item right,
+                array[in] = array[in - 1]; // shift item right,
                 --in; // go left one position
             }
-            a[in] = temp; // insert marked item
+            array[in] = temp; // insert marked item
         } // end for
 
     }
