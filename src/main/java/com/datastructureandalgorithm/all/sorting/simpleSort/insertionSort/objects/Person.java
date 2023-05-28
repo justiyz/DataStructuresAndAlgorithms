@@ -47,6 +47,7 @@ class ArrayInOb {
         System.out.println("");
     }
 
+    //sort the person data by the last name
     public void insertionSort() {
         int in, out;
         for (out = 1; out < nElems; out++) // out is dividing line
