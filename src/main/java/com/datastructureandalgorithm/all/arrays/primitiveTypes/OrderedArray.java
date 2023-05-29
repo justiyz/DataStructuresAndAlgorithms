@@ -71,24 +71,20 @@ public class OrderedArray {
         System.out.println(" ");
     }
 
-    public void insertIntoFirstArray(){
 
-    }
+    // Merge array1 and array2 into destination using nested for loops
+    public int[] merge(int[] array1, int[] array2) {
 
-    public int[] merge(int[] source1, int[] source2) {
-
-        int[] destination = new int[source1.length + source2.length];
-        for (int i = 0; i < source1.length; i++) {
-            for (int j = 0; j < source2.length; j++) {
-                if (source1[i] > source2[j]) {
-                    int temp = destination[i];
-                    destination[i] = source2[j];
-                    destination[i+1] = temp;
-                }
-
-            }
+        int[] destination = new int[array1.length + array2.length];
+        int index = 0;
+        for (int i = 0; i < array1.length; i++) {
+            destination[index] = array1[i];
+            index++;
         }
-
+        for (int j = 0; j < array2.length; j++) {
+            destination[index] = array2[j];
+            index++;
+        }
         return destination;
     }
 
