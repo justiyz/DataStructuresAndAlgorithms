@@ -35,7 +35,7 @@ public class OrderedArrayImpl {
 
         int[] source1 = {1, 2, 5};
         int [] source2 = {6, 7, 9};
-        int [] result = arr.merge(source1, source2);
+        int [] result = arr.merge(source2, source1);
         log.info("MERGED RESULT -> {}", result);
 
 

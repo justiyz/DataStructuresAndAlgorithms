@@ -72,7 +72,7 @@ public class OrderedArray {
     }
 
 
-    // Merge array1 and array2 into destination using nested for loops
+    // Merge array1 and array2 + sorting into destination
     public int[] merge(int[] array1, int[] array2) {
 
         int[] destination = new int[array1.length + array2.length];
@@ -84,6 +84,16 @@ public class OrderedArray {
         for (int j = 0; j < array2.length; j++) {
             destination[index] = array2[j];
             index++;
+        }
+
+        for (int i = 0; i < destination.length - 1; i++) {
+            for (int j = 0; j < destination.length - i - 1; j++) {
+                if (destination[j] > destination[j + 1]) {
+                    int temp = destination[j];
+                    destination[j] = destination[j + 1];
+                    destination[j + 1] = temp;
+                }
+            }
         }
         return destination;
     }
