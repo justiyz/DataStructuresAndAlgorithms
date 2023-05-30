@@ -1,6 +1,6 @@
 package com.datastructureandalgorithm.all.stacks;
 
-public class Stack {
+class Stack {
 
     private int maxSize; // size of stack array
     private long[] stackArray;
