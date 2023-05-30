@@ -17,7 +17,8 @@ public class InsertionSort {
         numberOfElements++; // increment size
     }
 
-    public void display() // displays array contents
+    // displays array contents
+    public void display()
     {
         for (int j = 0; j < numberOfElements; j++) // for each element,
             System.out.print(array[j] + " "); // display it
