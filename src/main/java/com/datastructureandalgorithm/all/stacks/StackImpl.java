@@ -12,8 +12,8 @@ public class StackImpl {
         theStack.push(60);
         theStack.push(80);
 
-        while( !theStack.isEmpty() ) // until it’s empty,
-        { // delete item from stack
+        // until it’s empty, delete item from stack
+        while (!theStack.isEmpty()) {
             long value = theStack.pop();
             System.out.print(value); // display it
             System.out.print("");
