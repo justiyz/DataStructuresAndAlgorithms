@@ -1,5 +1,8 @@
 package com.datastructureandalgorithm.all.stacks;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class StackImpl {
     public static void main(String[] args) {
 
@@ -16,9 +19,9 @@ public class StackImpl {
         while (!theStack.isEmpty()) {
             long value = theStack.pop();
             System.out.print(value); // display it
-            System.out.print("");
+            System.out.print(" ");
         } // end while
-        System.out.println("");
+        System.out.println(" ");
 
 
     }
