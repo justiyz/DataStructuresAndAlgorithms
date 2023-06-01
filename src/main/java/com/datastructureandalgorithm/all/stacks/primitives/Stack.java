@@ -1,4 +1,4 @@
-package com.datastructureandalgorithm.all.stacks;
+package com.datastructureandalgorithm.all.stacks.primitives;
 
 class Stack {
 
