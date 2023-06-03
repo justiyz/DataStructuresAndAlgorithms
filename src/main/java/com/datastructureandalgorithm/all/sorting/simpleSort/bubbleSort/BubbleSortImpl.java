@@ -4,8 +4,8 @@ package com.datastructureandalgorithm.all.sorting.simpleSort.bubbleSort;
 public class BubbleSortImpl {
     public static void main(String[] args) {
 
-        int maxSize = 100; // array size
-        BubbleSort arr; // reference to array
+        int maxSize = 100; //array size
+        BubbleSort arr; //reference to array
         arr = new BubbleSort(maxSize); // create the array
 
         // fill array with random numbers
