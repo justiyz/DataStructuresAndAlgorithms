@@ -37,9 +37,9 @@ class StackX {
 class BracketChecker {
     private String input; // input string
 
-    public BracketChecker(String in) // constructor
+    public BracketChecker(String input) // constructor
     {
-        input = in;
+        this.input = input;
     }
 
     public void check() {
@@ -63,9 +63,9 @@ class BracketChecker {
                         if ((ch == '}' && chx != '{') ||
                                 (ch == ']' && chx != '[') ||
                                 (ch == ')' && chx != '('))
-                            System.out.println("Error: " + ch + " at " + j);
+                            System.out.println("Error: " + ch + " at index" + j);
                     } else // prematurely empty
-                        System.out.println("Error: " + ch + " at " + j);
+                        System.out.println("Error: " + ch + " at index" + j);
                     break;
                 default: // no action on other characters
                     break;
