@@ -32,3 +32,11 @@ class StackX {
         return (top == -1);
     }
 }
+
+
+class BracketChecker {
+    private String input; // input string
+
+    public BracketChecker(String in) // constructor
+    { input = in; }
+}
