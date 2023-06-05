@@ -12,11 +12,13 @@ public class BracketCheckerImpl {
             System.out.flush();
             input = getString(); // read a string from kbd
             if (input.equals("")) // quit if [Enter]
-            {
                 break;
-            }
+
+            BracketChecker theChecker = new BracketChecker(input);
+            theChecker.check(); // check brackets
         }
     }
+
     public static String getString() throws IOException {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
