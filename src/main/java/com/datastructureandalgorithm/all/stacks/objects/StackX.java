@@ -49,32 +49,30 @@ class BracketChecker {
         {
             char ch = input.charAt(j); // get char
             switch (ch) {
-                // opening symbols
-                case '{':
+                case '{': // opening symbols
                 case '[':
                 case '(':
                     theStack.push(ch); // push them
                     break;
-
-                // closing symbols
-                case '}':
+                case '}': // closing symbols
                 case ']':
                 case ')':
                     if (!theStack.isEmpty()) // if stack not empty,
                     {
                         char chx = theStack.pop(); // pop and check
-                        if ((ch == '}' && chx != '{') || (ch == ']' && chx != '[') || (ch == ')' && chx != '('))
-                            System.out.println("Error: " + ch + "at " + j);
-                    } else { // prematurely empty
+                        if ((ch == '}' && chx != '{') ||
+                                (ch == ']' && chx != '[') ||
+                                (ch == ')' && chx != '('))
+                            System.out.println("Error: " + ch + " at " + j);
+                    } else // prematurely empty
                         System.out.println("Error: " + ch + " at " + j);
-                        break;
-                    }
+                    break;
                 default: // no action on other characters
                     break;
-            }
-        }
+            } // end switch
+        } // end for
         // at this point, all characters have been processed
         if (!theStack.isEmpty())
             System.out.println("Error: missing right delimiter");
-    }
+    } // end check()
 }
