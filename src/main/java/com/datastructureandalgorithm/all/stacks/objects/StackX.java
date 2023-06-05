@@ -73,5 +73,8 @@ class BracketChecker {
                     break;
             }
         }
+        // at this point, all characters have been processed
+        if (!theStack.isEmpty())
+            System.out.println("Error: missing right delimiter");
     }
 }
