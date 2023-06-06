@@ -38,5 +38,20 @@ public class Queue {
     public long peekFront() {
         return queArray[front];
     }
-}
+
+    public boolean isEmpty() // true if queue is empty
+    {
+        return (nItems==0);
+    }
+
+    public boolean isFull() // true if queue is full
+    {
+        return (nItems==maxSize);
+    }
+
+    public int size() // number of items in queue
+    {
+        return nItems;
+    }
+
 }
