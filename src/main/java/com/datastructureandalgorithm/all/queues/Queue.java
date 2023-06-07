@@ -27,11 +27,11 @@ public class Queue {
 
     public long remove() // take item from front of queue
     {
-        long temp = queArray[front++]; // get value and incr front
+        long removedValue = queArray[front++]; // get value and incr front
         if (front == maxSize) // deal with wraparound
             front = 0;
         nItems--; // one less item
-        return temp;
+        return removedValue;
     }
 
     // peek at front of queue
