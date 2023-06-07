@@ -6,31 +6,31 @@ public class Queue {
     private long[] queArray;
     private int front;
     private int rear;
-    private int nItems;
+    private int numberOfItems;
 
-    public Queue(int s) // constructor
-    {
+    // constructor
+    public Queue(int s) {
         maxSize = s;
         queArray = new long[maxSize];
         front = 0;
         rear = -1;
-        nItems = 0;
+        numberOfItems = 0;
     }
 
-    public void insert(long j) // put item at rear of queue
-    {
+    // put item at rear of queue
+    public void insert(long j) {
         if (rear == maxSize - 1) // deal with wraparound
             rear = -1;
         queArray[++rear] = j; // increment rear and insert
-        nItems++; // one more item
+        numberOfItems++; // one more item
     }
 
-    public long remove() // take item from front of queue
-    {
+    // take item from front of queue
+    public long remove() {
         long removedValue = queArray[front++]; // get value and incr front
         if (front == maxSize) // deal with wraparound
             front = 0;
-        nItems--; // one less item
+        numberOfItems--; // one less item
         return removedValue;
     }
 
@@ -39,19 +39,19 @@ public class Queue {
         return queArray[front];
     }
 
-    public boolean isEmpty() // true if queue is empty
-    {
-        return (nItems==0);
+    // true if queue is empty
+    public boolean isEmpty() {
+        return (numberOfItems == 0);
     }
 
-    public boolean isFull() // true if queue is full
-    {
-        return (nItems==maxSize);
+    // true if queue is full
+    public boolean isFull() {
+        return (numberOfItems == maxSize);
     }
 
-    public int size() // number of items in queue
-    {
-        return nItems;
+    // number of items in queue
+    public int size() {
+        return numberOfItems;
     }
 
 }
