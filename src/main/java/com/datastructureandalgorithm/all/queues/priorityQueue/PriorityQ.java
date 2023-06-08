@@ -7,43 +7,51 @@ class PriorityQ {
     private long[] queArray;
     private int nItems;
 
-    public PriorityQ(int s) // constructor
-    {
+    // constructor
+    public PriorityQ(int s) {
         maxSize = s;
         queArray = new long[maxSize];
         nItems = 0;
     }
 
-    public void insert(long item) // insert item
-    {
+    // insert item
+    public void insert(long item) {
         int j;
-        if(nItems==0) // if no items,
+        if (nItems == 0) // if no items,
             queArray[nItems++] = item; // insert at 0
         else // if items,
         {
-            for(j=nItems-1; j>=0; j--) // start at end,
+            for (j = nItems - 1; j >= 0; j--) // start at end,
             {
-                if( item > queArray[j] ) // if new item larger,
-                    queArray[j+1] = queArray[j]; // shift upward
+                if (item > queArray[j]) // if new item larger,
+                    queArray[j + 1] = queArray[j]; // shift upward
                 else // if smaller,
                     break; // done shifting
             } // end for
-            queArray[j+1] = item; // insert it
+            queArray[j + 1] = item; // insert it
             nItems++;
         } // end else (nItems > 0)
     } // end insert()
 
-    public long remove() // remove minimum item
-    { return queArray[--nItems]; }
+    // remove minimum item
+    public long remove() {
+        return queArray[--nItems];
+    }
 
-    public long peekMin() // peek at minimum item
-    { return queArray[nItems-1]; }
+    // peek at minimum item
+    public long peekMin() {
+        return queArray[nItems - 1];
+    }
 
-    public boolean isEmpty() // true if queue is empty
-    { return (nItems==0); }
+    // true if queue is empty
+    public boolean isEmpty() {
+        return (nItems == 0);
+    }
 
-    public boolean isFull() // true if queue is full
-    { return (nItems == maxSize); }
+    // true if queue is full
+    public boolean isFull() {
+        return (nItems == maxSize);
+    }
 
 
 }
