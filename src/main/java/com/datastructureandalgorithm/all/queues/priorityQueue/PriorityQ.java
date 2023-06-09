@@ -5,23 +5,23 @@ class PriorityQ {
     // array in sorted order, from max at 0 to min at size-1
     private int maxSize;
     private long[] queArray;
-    private int nItems;
+    private int numberOfItems;
 
     // constructor
     public PriorityQ(int s) {
         maxSize = s;
         queArray = new long[maxSize];
-        nItems = 0;
+        numberOfItems = 0;
     }
 
     // insert item
     public void insert(long item) {
         int j;
-        if (nItems == 0) // if no items,
-            queArray[nItems++] = item; // insert at 0
+        if (numberOfItems == 0) // if no items,
+            queArray[numberOfItems++] = item; // insert at 0
         else // if items,
         {
-            for (j = nItems - 1; j >= 0; j--) // start at end,
+            for (j = numberOfItems - 1; j >= 0; j--) // start at end,
             {
                 if (item > queArray[j]) // if new item larger,
                     queArray[j + 1] = queArray[j]; // shift upward
@@ -29,28 +29,28 @@ class PriorityQ {
                     break; // done shifting
             } // end for
             queArray[j + 1] = item; // insert it
-            nItems++;
+            numberOfItems++;
         } // end else (nItems > 0)
     } // end insert()
 
     // remove minimum item
     public long remove() {
-        return queArray[--nItems];
+        return queArray[--numberOfItems];
     }
 
     // peek at minimum item
     public long peekMin() {
-        return queArray[nItems - 1];
+        return queArray[numberOfItems - 1];
     }
 
     // true if queue is empty
     public boolean isEmpty() {
-        return (nItems == 0);
+        return (numberOfItems == 0);
     }
 
     // true if queue is full
     public boolean isFull() {
-        return (nItems == maxSize);
+        return (numberOfItems == maxSize);
     }
 
 
