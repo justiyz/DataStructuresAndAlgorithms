@@ -9,7 +9,7 @@ class Link {
     public Link(int id, double dd) {
         iData = id; // initialize data
         dData = dd;
-        next = null;
+        next = null; //we set next to null here but this isn't necessary cuz references are set to null automatically when they’re created.
     }
 
     // display ourself
