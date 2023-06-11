@@ -20,4 +20,11 @@ class LinkList {
         first = newLink; // first --> newLink
     }
 
+    // delete first item (assumes list not empty)
+    public Link deleteFirst() {
+        Link temp = first; // save reference to link
+        first = first.next; // delete it: first-->old next
+        return temp; // return deleted link
+    }
+
 }
