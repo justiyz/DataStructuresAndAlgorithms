@@ -8,8 +8,9 @@ class Link {
     // constructor
     public Link(int id, double dd) {
         iData = id; // initialize data
-        dData = dd; // (‘next’ is automatically
-    } // set to null)
+        dData = dd;
+        next = null;
+    }
 
     // display ourself
     public void displayLink() {
