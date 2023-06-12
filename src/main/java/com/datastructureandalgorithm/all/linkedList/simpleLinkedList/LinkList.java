@@ -27,8 +27,8 @@ class LinkList {
         return temp; // return deleted link
     }
 
-    public Link find(int key) // find link with given key
-    { // (assumes non-empty list)
+    // find link with given key (assumes non-empty list)
+    public Link find(int key) {
         Link current = first; // start at ‘first’
         while (current.iData != key) // while no match,
         {
