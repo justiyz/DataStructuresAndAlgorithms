@@ -1,6 +1,7 @@
 package com.datastructureandalgorithm.all.linkedList.doubleEndedList;
 
 class Link {
+
     public long dData; // data item
     public Link next; // next link in list
 
