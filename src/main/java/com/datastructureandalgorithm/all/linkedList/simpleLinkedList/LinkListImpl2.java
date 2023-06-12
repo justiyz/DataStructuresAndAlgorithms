@@ -1,15 +1,22 @@
 package com.datastructureandalgorithm.all.linkedList.simpleLinkedList;
 
-public class LinkListImpl2 {
+class LinkListImpl2 {
     public static void main(String[] args) {
 
-        LinkList theList = new LinkList(); // make list
-        theList.insertFirst(22, 2.99); // insert 4 items
+        // make list
+        LinkList theList = new LinkList();
+
+        // insert 4 items
+        theList.insertFirst(22, 2.99);
         theList.insertFirst(44, 4.99);
         theList.insertFirst(66, 6.99);
         theList.insertFirst(88, 8.99);
-        theList.displayList(); // display list
-        Link f = theList.find(44); // find item
+
+        // display list
+        theList.displayList();
+
+        // find item
+        Link f = theList.find(44);
 
         if (f != null)
             System.out.println("Found link with key " + f.iData);
