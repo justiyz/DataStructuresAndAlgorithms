@@ -27,4 +27,15 @@ class LinkList {
         return temp; // return deleted link
     }
 
+    public void displayList() {
+        System.out.print("List (first-->last): ");
+        Link current = first; // start at beginning of list
+        while (current != null) // until end of list,
+        {
+            current.displayLink(); // print data
+            current = current.next; // move to next link
+        }
+        System.out.println("");
+    }
+
 }
