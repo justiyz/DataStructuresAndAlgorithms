@@ -1,4 +1,4 @@
-package com.datastructureandalgorithm.all.linkedList.examples.stackImplementedByLinkedList;
+package com.datastructureandalgorithm.all.linkedList.moreExamples.stackImplementedByLinkedList;
 
 class Link {
     public long dData; // data item
