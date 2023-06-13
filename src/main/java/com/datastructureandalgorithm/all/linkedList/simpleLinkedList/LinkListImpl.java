@@ -1,6 +1,6 @@
 package com.datastructureandalgorithm.all.linkedList.simpleLinkedList;
 
-public class LinkListImpl {
+class LinkListImpl {
     public static void main(String[] args)
     {
         LinkList theList = new LinkList(); // make new list
