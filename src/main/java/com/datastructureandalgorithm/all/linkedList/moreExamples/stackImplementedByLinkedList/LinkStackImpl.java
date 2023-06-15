@@ -4,14 +4,25 @@ class LinkStackImpl {
     public static void main(String[] args) {
         LinkStack theStack = new LinkStack(); // make stack
 
-        theStack.push(20); // push items
+        // push items
+        theStack.push(20);
         theStack.push(40);
-        theStack.displayStack(); // display stack
-        theStack.push(60); // push items
+
+        // display stack
+        theStack.displayStack();
+
+        // push items
+        theStack.push(60);
         theStack.push(80);
-        theStack.displayStack(); // display stack
-        theStack.pop(); // pop items
+
+        // display stack
+        theStack.displayStack();
+
+        // pop items
         theStack.pop();
-        theStack.displayStack(); // display stack
+        theStack.pop();
+
+        // display stack
+        theStack.displayStack();
     }
 }
