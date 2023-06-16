@@ -3,7 +3,7 @@ package com.datastructureandalgorithm.all.arrays.objects;
 import lombok.Data;
 
 @Data
-public class ClassDataApp {
+class ClassDataApp {
     public static void main(String[] args) {
 
         int maxSize = 100; // array size

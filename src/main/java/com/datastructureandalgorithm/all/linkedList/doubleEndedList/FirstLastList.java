@@ -1,6 +1,6 @@
 package com.datastructureandalgorithm.all.linkedList.doubleEndedList;
 
-public class FirstLastList {
+class FirstLastList {
     private Link first; // ref to first link
     private Link last; // ref to last link
 
