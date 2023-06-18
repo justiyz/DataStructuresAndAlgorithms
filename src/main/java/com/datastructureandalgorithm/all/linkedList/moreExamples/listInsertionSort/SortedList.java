@@ -32,4 +32,11 @@ class SortedList {
             previous.next = k; // old prev --> k
         k.next = current; // k --> old current
     } // end insert()
+
+    public Link remove() // return & delete first link
+    { // (assumes non-empty list)
+        Link temp = first; // save first
+        first = first.next; // delete first
+        return temp; // return value
+    }
 }
