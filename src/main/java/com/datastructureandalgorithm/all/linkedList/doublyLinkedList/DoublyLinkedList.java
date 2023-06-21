@@ -5,19 +5,21 @@ class DoublyLinkedList {
     private Link first; // ref to first item
     private Link last; // ref to last item
 
-    public DoublyLinkedList() // constructor
-    {
+    // constructor
+    public DoublyLinkedList() {
         first = null; // no items on list yet
         last = null;
     }
 
-    public boolean isEmpty() // true if no links
-    { return first==null; }
+    // true if no links
+    public boolean isEmpty() {
+        return first == null;
+    }
 
-    public void insertFirst(long dd) // insert at front of list
-    {
+    // insert at front of list
+    public void insertFirst(long dd) {
         Link newLink = new Link(dd); // make new link
-        if( isEmpty() ) // if empty list,
+        if (isEmpty()) // if empty list,
             last = newLink; // newLink <-- last
         else
             first.previous = newLink; // newLink <-- old first
@@ -25,23 +27,22 @@ class DoublyLinkedList {
         first = newLink; // first --> newLink
     }
 
-    public void insertLast(long dd) // insert at end of list
-    {
+    // insert at end of list
+    public void insertLast(long dd) {
         Link newLink = new Link(dd); // make new link
-        if( isEmpty() ) // if empty list,
+        if (isEmpty()) // if empty list,
             first = newLink; // first --> newLink
-        else
-        {
+        else {
             last.next = newLink; // old last --> newLink
             newLink.previous = last; // old last <-- newLink
         }
         last = newLink; // newLink <-- last
     }
 
-    public Link deleteFirst() // delete first link
-    { // (assumes non-empty list)
+    // delete first link (assumes non-empty list)
+    public Link deleteFirst() {
         Link temp = first;
-        if(first.next == null) // if only one item
+        if (first.next == null) // if only one item
             last = null; // null <-- last
         else
             first.next.previous = null; // null <-- old next
@@ -49,10 +50,10 @@ class DoublyLinkedList {
         return temp;
     }
 
-    public Link deleteLast() // delete last link
-    { // (assumes non-empty list)
+    // delete last link
+    public Link deleteLast() { // (assumes non-empty list)
         Link temp = last;
-        if(first.next == null) // if only one item
+        if (first.next == null) // if only one item
             first = null; // first --> null
         else
             last.previous.next = null; // old previous --> null
@@ -60,26 +61,24 @@ class DoublyLinkedList {
         return temp;
     }
 
-    // insert dd just after key
-    public boolean insertAfter(long key, long dd)
-    { // (assumes non-empty list)
+    // insert dd just after key(assumes non-empty list)
+    public boolean insertAfter(long key, long dd) {
         Link current = first; // start at beginning
-        while(current.dData != key) // until match is found,
+        while (current.dData != key) // until match is found,
         {
             current = current.next; // move to next link
-            if(current == null)
+            if (current == null)
                 return false; // didn’t find it
         }
         Link newLink = new Link(dd); // make new link
-        if(current==last) // if last link,
+        if (current == last) // if last link,
         {
             newLink.next = null; // newLink --> null
             last = newLink; // newLink <-- last
-        }
-        else // not last link,
+        } else // not last link,
         {
             newLink.next = current.next; // newLink --> old next
-// newLink <-- old next
+            // newLink <-- old next
             current.next.previous = newLink;
         }
         newLink.previous = current; // old current <-- newLink
@@ -87,33 +86,33 @@ class DoublyLinkedList {
         return true; // found it, did insertion
     }
 
-    public Link deleteKey(long key) // delete item w/ given key
-    { // (assumes non-empty list)
+    // delete item w/ given key
+    public Link deleteKey(long key) { // (assumes non-empty list)
         Link current = first; // start at beginning
-        while(current.dData != key) // until match is found,
+        while (current.dData != key) // until match is found,
         {
             current = current.next; // move to next link
-            if(current == null)
+            if (current == null)
                 return null; // didn’t find it
         }
-        if(current==first) // found it; first item?
+        if (current == first) // found it; first item?
             first = current.next; // first --> old next
         else // not first
-// old previous --> old next
+            // old previous --> old next
             current.previous.next = current.next;
-        if(current==last) // last item?
+
+        if (current == last) // last item?
             last = current.previous; // old previous <-- last
         else // not last
-// old previous <-- old next
+            // old previous <-- old next
             current.next.previous = current.previous;
         return current; // return value
     }
 
-    public void displayForward()
-    {
+    public void displayForward() {
         System.out.print("List (first-->last): ");
         Link current = first; // start at beginning
-        while(current != null) // until end of list,
+        while (current != null) // until end of list,
         {
             current.displayLink(); // display data
             current = current.next; // move to next link
@@ -121,18 +120,16 @@ class DoublyLinkedList {
         System.out.println("");
     }
 
-    public void displayBackward()
-    {
+    public void displayBackward() {
         System.out.print("List (last-->first): ");
         Link current = last; // start at end
-        while(current != null) // until start of list,
+        while (current != null) // until start of list,
         {
             current.displayLink(); // display data
             current = current.previous; // move to previous link
         }
         System.out.println("");
     }
-
 
 
 }
