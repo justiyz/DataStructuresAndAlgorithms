@@ -50,8 +50,8 @@ class DoublyLinkedList {
         return temp;
     }
 
-    // delete last link
-    public Link deleteLast() { // (assumes non-empty list)
+    // delete last link(assumes non-empty list)
+    public Link deleteLast() {
         Link temp = last;
         if (first.next == null) // if only one item
             first = null; // first --> null
@@ -86,8 +86,8 @@ class DoublyLinkedList {
         return true; // found it, did insertion
     }
 
-    // delete item w/ given key
-    public Link deleteKey(long key) { // (assumes non-empty list)
+    // delete item w/ given key(assumes non-empty list)
+    public Link deleteKey(long key) {
         Link current = first; // start at beginning
         while (current.dData != key) // until match is found,
         {
