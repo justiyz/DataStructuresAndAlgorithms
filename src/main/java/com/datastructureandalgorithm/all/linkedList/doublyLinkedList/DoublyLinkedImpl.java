@@ -2,6 +2,7 @@ package com.datastructureandalgorithm.all.linkedList.doublyLinkedList;
 
 class DoublyLinkedImpl {
     public static void main(String[] args) {
+
         DoublyLinkedList theList = new DoublyLinkedList();
 
         // insert at front
