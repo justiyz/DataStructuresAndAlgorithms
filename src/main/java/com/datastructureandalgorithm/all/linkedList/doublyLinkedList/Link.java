@@ -6,11 +6,15 @@ class Link {
     public Link next; // next link in list
     public Link previous; // previous link in list
 
-    public Link(long d) // constructor
-    { dData = d; }
+    // constructor
+    public Link(long d) {
+        dData = d;
+    }
 
-    public void displayLink() // display this link
-    { System.out.print(dData + " "); }
+    // display this link
+    public void displayLink() {
+        System.out.print(dData + " ");
+    }
 
 } // end class Link
 
