@@ -3,7 +3,7 @@ package com.datastructureandalgorithm.all.arrays.objects;
 import lombok.Data;
 
 @Data
-class ClassDataApp {
+class ClassDataImpl {
     public static void main(String[] args) {
 
         int maxSize = 100; // array size
@@ -20,7 +20,7 @@ class ClassDataApp {
         arr.insert("Velasquez", "Jose", 72);
         arr.insert("Lamarque", "Henry", 54);
         arr.insert("Vang", "Minh", 22);
-        arr.insert("Creswell", "Lucinda", 18);
+        arr.insert("Cresswell", "Lucinda", 18);
 
         arr.displayArrayOfPersons();
 
