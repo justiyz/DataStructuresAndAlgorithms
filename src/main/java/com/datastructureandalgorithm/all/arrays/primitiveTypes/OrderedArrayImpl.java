@@ -3,7 +3,7 @@ package com.datastructureandalgorithm.all.arrays.primitiveTypes;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class OrderedArrayImpl {
+class OrderedArrayImpl {
     public static void main(String[] args) {
 
         int maxSize = 100; // array size

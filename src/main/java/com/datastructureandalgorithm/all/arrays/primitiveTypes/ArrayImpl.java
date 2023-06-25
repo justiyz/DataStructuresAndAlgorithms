@@ -1,6 +1,6 @@
 package com.datastructureandalgorithm.all.arrays.primitiveTypes;
 
-public class ArrayImpl {
+class ArrayImpl {
     public static void main(String[] args) {
 
         Arrays arrays = new Arrays(2);
@@ -8,7 +8,8 @@ public class ArrayImpl {
         arrays.insert(20);
         arrays.insert(30);
         arrays.insert(40);
-//        arrays.removeAt(3);
+
+        //arrays.removeAt(3);
         System.out.println(arrays.indexOf(400));
         arrays.print();
 
