@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Data
 @Slf4j
-public class Arrays {
+class Arrays {
 
     private int[] items;
     private int count;
