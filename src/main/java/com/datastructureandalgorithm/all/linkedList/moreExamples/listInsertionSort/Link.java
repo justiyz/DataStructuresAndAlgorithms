@@ -6,6 +6,7 @@ class Link {
     public Link next; // next link in list
 
     // constructor
-    public Link(long dd)
-    { dData = dd; }
+    public Link(long dd) {
+        dData = dd;
+    }
 }
