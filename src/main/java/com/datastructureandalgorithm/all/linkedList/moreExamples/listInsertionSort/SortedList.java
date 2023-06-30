@@ -4,7 +4,8 @@ class SortedList {
 
     private Link first; // ref to first item on list
 
-    public SortedList() // constructor (no args)
+    // constructor (no args)
+    public SortedList()
     {
         first = null;
     } // initialize list
@@ -33,7 +34,8 @@ class SortedList {
         k.next = current; // k --> old current
     } // end insert()
 
-    public Link remove() // return & delete first link
+    // return & delete first link
+    public Link remove()
     { // (assumes non-empty list)
         Link temp = first; // save first
         first = first.next; // delete first
