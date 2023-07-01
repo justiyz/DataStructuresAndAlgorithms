@@ -69,8 +69,8 @@ class ClassDataArray {
         }
     }
 
-    public void displayArrayOfPersons() // displays array contents
-    {
+    // displays array contents
+    public void displayArrayOfPersons() {
         for (int j = 0; j < numberOfElements; j++) // for each element,
             ArrayOfPersons[j].displayPerson(); // display it
     }
