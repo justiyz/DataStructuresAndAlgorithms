@@ -23,6 +23,7 @@ class LinkStack {
         return (theList.isEmpty());
     }
 
+    //display stack
     public void displayStack() {
         System.out.print("Stack (top-->bottom): ");
         theList.displayList();
