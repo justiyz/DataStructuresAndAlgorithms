@@ -27,6 +27,7 @@ class LinkList {
         return temp.dData; // return deleted link
     }
 
+    //display list
     public void displayList() {
         Link current = first; // start at beginning of list
         while (current != null) // until end of list,

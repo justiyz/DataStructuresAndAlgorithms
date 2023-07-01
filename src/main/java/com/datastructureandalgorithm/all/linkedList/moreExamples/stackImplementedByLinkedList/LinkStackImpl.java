@@ -2,6 +2,7 @@ package com.datastructureandalgorithm.all.linkedList.moreExamples.stackImplement
 
 class LinkStackImpl {
     public static void main(String[] args) {
+
         LinkStack theStack = new LinkStack(); // make stack
 
         // push items
