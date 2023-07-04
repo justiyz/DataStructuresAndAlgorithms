@@ -3,7 +3,10 @@ package com.datastructureandalgorithm.all.arrays.primitiveTypes;
 class ArrayImpl {
     public static void main(String[] args) {
 
+        //create new object with length
         Arrays arrays = new Arrays(2);
+
+        //insert 4 items
         arrays.insert(10);
         arrays.insert(20);
         arrays.insert(30);
