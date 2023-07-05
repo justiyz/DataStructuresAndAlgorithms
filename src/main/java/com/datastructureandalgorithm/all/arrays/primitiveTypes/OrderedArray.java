@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Data
 @Slf4j
-public class OrderedArray {
+class OrderedArray {
 
     private long[] array;
     private int numberOfElements;
@@ -19,6 +19,7 @@ public class OrderedArray {
         return numberOfElements;
     }
 
+    //find an item
     public int find(long searchKey) {
         int lowerBound = 0;
         int upperBound = numberOfElements - 1;
@@ -39,8 +40,8 @@ public class OrderedArray {
         }
     }
 
-    public void insert(long value) // put element into array
-    {
+    // put element into array
+    public void insert(long value) {
         int j;
         for (j = 0; j < numberOfElements; j++) // find where it goes
             if (array[j] > value) // (linear search)
@@ -51,6 +52,7 @@ public class OrderedArray {
         numberOfElements++; // increment size
     }
 
+    //remove item
     public boolean delete(long value) {
         int j = find(value);
         if (j == numberOfElements) // can’t find it
@@ -64,8 +66,8 @@ public class OrderedArray {
         }
     } // end delete()
 
-    public void display() // displays array contents
-    {
+    // displays array contents
+    public void display() {
         for (int j = 0; j < numberOfElements; j++) // for each element,
             System.out.print(array[j] + " "); // display it
         System.out.println(" ");
