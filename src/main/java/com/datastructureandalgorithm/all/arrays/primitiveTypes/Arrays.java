@@ -20,6 +20,7 @@ class Arrays {
         }
     }
 
+    //insert into the array
     public void insert(int item) {
         if (items.length == count) {
             int[] newItems = new int[count * 2];
@@ -33,6 +34,7 @@ class Arrays {
         count++;
     }
 
+    //remove an item at a given index
     public void removeAt(int index) {
         if (index < 0 || index >= count) {
             throw new IllegalArgumentException();
