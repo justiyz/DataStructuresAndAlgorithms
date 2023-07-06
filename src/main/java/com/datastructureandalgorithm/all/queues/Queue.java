@@ -1,6 +1,6 @@
 package com.datastructureandalgorithm.all.queues;
 
-public class Queue {
+class Queue {
 
     private int maxSize;
     private long[] queArray;

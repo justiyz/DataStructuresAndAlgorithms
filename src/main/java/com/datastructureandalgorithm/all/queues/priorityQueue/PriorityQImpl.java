@@ -1,6 +1,6 @@
 package com.datastructureandalgorithm.all.queues.priorityQueue;
 
-public class PriorityQImpl {
+class PriorityQImpl {
     public static void main(String[] args) {
         PriorityQ thePQ = new PriorityQ(5);
         thePQ.insert(30);
