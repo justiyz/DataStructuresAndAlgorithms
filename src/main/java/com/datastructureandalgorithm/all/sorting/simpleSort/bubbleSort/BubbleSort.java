@@ -1,6 +1,6 @@
 package com.datastructureandalgorithm.all.sorting.simpleSort.bubbleSort;
 
-    public class BubbleSort {
+public class BubbleSort {
 
     private final long[] array; // ref to array a
     private int numberOfElements; // number of data items
