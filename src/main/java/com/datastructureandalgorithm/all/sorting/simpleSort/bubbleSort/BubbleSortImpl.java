@@ -1,7 +1,7 @@
 package com.datastructureandalgorithm.all.sorting.simpleSort.bubbleSort;
 
 
-public class BubbleSortImpl {
+class BubbleSortImpl {
     public static void main(String[] args) {
 
         int maxSize = 100; //array size
