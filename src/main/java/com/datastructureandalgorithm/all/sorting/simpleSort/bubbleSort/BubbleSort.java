@@ -1,6 +1,6 @@
 package com.datastructureandalgorithm.all.sorting.simpleSort.bubbleSort;
 
-public class BubbleSort {
+class BubbleSort {
 
     private final long[] array; // ref to array a
     private int numberOfElements; // number of data items
@@ -23,6 +23,7 @@ public class BubbleSort {
         System.out.println("");
     }
 
+    // sort
     public void bubbleSort() {
         int out, in;
         for (out = numberOfElements - 1; out > 1; out--) // outer loop (backward)
