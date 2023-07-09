@@ -14,7 +14,8 @@ class BubbleSortImpl {
             arr.insert(n);
         }
 
-        arr.insert(77); // insert 10 items
+        // insert 10 items
+        arr.insert(77);
         arr.insert(99);
         arr.insert(44);
         arr.insert(55);
