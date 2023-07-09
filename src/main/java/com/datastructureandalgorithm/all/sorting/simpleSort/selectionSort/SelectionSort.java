@@ -3,7 +3,7 @@ package com.datastructureandalgorithm.all.sorting.simpleSort.selectionSort;
 import lombok.Data;
 
 @Data
-public class SelectionSort {
+class SelectionSort {
 
     private long[] array; // ref to array a
     private int numberOfElements; // number of data items
