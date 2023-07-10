@@ -1,6 +1,6 @@
 package com.datastructureandalgorithm.all.sorting.simpleSort.insertionSort.primitives;
 
-public class InsertionSort {
+class InsertionSort {
 
     private final long[] array;
     private int numberOfElements;
