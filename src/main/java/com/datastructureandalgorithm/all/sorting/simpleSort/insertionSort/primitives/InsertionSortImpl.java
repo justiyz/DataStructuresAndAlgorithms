@@ -1,6 +1,6 @@
 package com.datastructureandalgorithm.all.sorting.simpleSort.insertionSort.primitives;
 
-public class InsertionSortImpl {
+class InsertionSortImpl {
 
     public static void main(String[] args) {
 
