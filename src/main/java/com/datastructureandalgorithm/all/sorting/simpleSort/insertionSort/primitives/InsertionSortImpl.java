@@ -13,7 +13,7 @@ class InsertionSortImpl {
 //            arr.insert(n);
 //        }
 
-//        // insert 10 items
+        // insert 10 items
         arr.insert(77);
         arr.insert(99);
         arr.insert(44);
